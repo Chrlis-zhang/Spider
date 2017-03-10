@@ -25,7 +25,7 @@ class mzitu():
             title = a.get_text()
             if self.meizitu_collection.find_one({'标题': title}):
                 print('标题已经存在，休息1秒后继续')
-                #time.sleep(1)
+                time.sleep(1)
             else:
                 self.title = title  # 新增
                 print('开始保存', title)
@@ -35,11 +35,11 @@ class mzitu():
                 href = a['href']
                 # self.html(href)
                 self.url = href  # 新增
-                if self.meizitu_collection.find_one({'主题页面': href}):  # 新增
-                    print('已爬页面,休息5秒后开始')
-                    time.sleep(5)
-                else:
-                    self.html(href)
+                #if self.meizitu_collection.find_one({'主题页面': href}):  # 新增
+                #    print('已爬页面,休息5秒后开始')
+                #   time.sleep(5)
+                #else:
+                self.html(href)
 
     def html(self,href):
         html = self.request(href)   #不使用代理的时候使用
