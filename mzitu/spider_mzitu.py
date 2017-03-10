@@ -5,7 +5,7 @@ import datetime
 import time
 from bs4 import BeautifulSoup
 from pymongo import MongoClient
-from proxy2 import request
+#from proxy2 import request
 
 class mzitu():
 
@@ -93,10 +93,6 @@ class mzitu():
     #不使用代理的时候使用
     def request(self,url):
         headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
-                   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-                   'Accept-Language': 'en-US,en;q=0.5',
-                   'Connection': 'keep-alive',
-                   'Accept-Encoding': 'gzip, deflate',
                    }
         content =requests.get(url,headers=headers)
         return content
