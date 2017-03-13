@@ -16,7 +16,7 @@ img_url = ''
 data = ''
 
 start_page = int(input('输入开始页面:'))
-stop_page =  int(input('输入介绍页面：'))
+stop_page =  int(input('输入结束页面：'))
 
 user_agent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
 headers = {'User-Agent': user_agent}
