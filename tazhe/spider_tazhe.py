@@ -3,6 +3,8 @@
 抓取tazhe.com漫画网站上面的漫画
 用selenium来访问页面获取返回信息
 程序写的比较粗糙，写入文件夹部分暂时也没做去重的判断
+
+requests请求的时候，需要res.encoding = 'utf-8'
 '''
 import requests
 import os
