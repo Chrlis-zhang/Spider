@@ -1,8 +1,7 @@
 #coding:utf-8
 '''
 抓取tazhe.com漫画网站上面的漫画
-用requests访问的时候返回的是乱码
-加上指定的格式返回的也是乱码，所以才用selenium来访问页面获取返回信息
+用selenium来访问页面获取返回信息
 程序写的比较粗糙，写入文件夹部分暂时也没做去重的判断
 '''
 import requests
