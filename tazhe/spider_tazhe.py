@@ -27,7 +27,7 @@ mn_list = BeautifulSoup(text,'lxml').find('div',class_='plist pnormal').find_all
 for mn_url in mn_list:
     browser.get('http://www.tazhe.com%s' % (mn_url.get('href')))  # 访问漫画列表，按照默认排序访问
     text2 = browser.page_source
-    print(text2)
+    #print(text2)
     mn_names = BeautifulSoup(text2, 'lxml').find('title').get_text()    #漫画详情页面的title,创建文件夹使用
     img_title = BeautifulSoup(text2, 'lxml').find('h1').get_text()      #
     imgs = BeautifulSoup(text2, 'lxml').find('div', class_='tbCenter').find('img', class_='52tianmanhua')
